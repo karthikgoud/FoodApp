@@ -51,9 +51,9 @@ const restaurantList = [
 ];
 
 const Card = (props) => {
-  //   console.log(props);
+  console.log(props);
+  const { image, name, rating, place } = props;
   //destructuring
-  const { image, name, rating, place } = props.restautant;
   return (
     <div className="card-container">
       <img src={image} />
@@ -67,16 +67,16 @@ const Card = (props) => {
 const Body = () => {
   return (
     <div className="cards-div">
-      <Card restautant={restaurantList[0]} />
-      <Card restautant={restaurantList[1]} />
-      <Card restautant={restaurantList[2]} />
-      <Card restautant={restaurantList[3]} />
+      {/* For each restaurant returns a card inside cards-div */}
+      {restaurantList.map((restaurant) => {
+        return <Card {...restaurant} />;
+      })}
     </div>
   );
 };
 
 const Footer = () => {
-  return <h1>footer</h1>;
+  return <h1>Footer</h1>;
 };
 const FoodApp = () => {
   return (
