@@ -1,0 +1,29 @@
+{
+  "devDependencies": {
+    "parcel": "^2.8.2",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "name": "foodapp",
+  "version": "1.0.0",
+  "main": "App.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karthikgoud/FoodApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karthikgoud/FoodApp/issues"
+  },
+  "homepage": "https://github.com/karthikgoud/FoodApp#readme",
+  "description": ""
+}
