@@ -23,9 +23,15 @@ li{
     border: 1px solid black;
     border-radius: 1rem;
     padding: 0.5rem;
+    margin: 1rem;
 }
 
 .card-container>img{
     width: 100%;
     border-radius: 1rem;
+}
+
+.cards-div{
+    display: flex;
+
 }
