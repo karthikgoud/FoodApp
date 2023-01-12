@@ -1,5 +1,5 @@
 import Card from "./Card";
-import { restaurantList } from "../../config";
+import { restaurantList } from "../config";
 import { useState } from "react";
 
 function filterData(searchTxt, restaurants) {
