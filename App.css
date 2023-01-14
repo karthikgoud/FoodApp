@@ -1,3 +1,5 @@
+
+
 .header-container{
     display: flex;
     justify-content: space-between;
@@ -34,5 +36,5 @@ li{
 
 .cards-div{
     display: flex;
-
+    flex-wrap: wrap;
 }
