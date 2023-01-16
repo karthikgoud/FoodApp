@@ -1,3 +1,5 @@
+
+
 .header-container{
     display: flex;
     justify-content: space-between;
@@ -34,5 +36,19 @@ li{
 
 .cards-div{
     display: flex;
+    flex-wrap: wrap;
+}
 
+.shimmer{
+    background: lightgray;
+    width: 200px;
+    height: 300px;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+.restaurant-list{
+    display: flex;
+    flex-wrap: wrap;
 }

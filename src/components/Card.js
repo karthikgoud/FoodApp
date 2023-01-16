@@ -1,12 +1,14 @@
+import { imageID } from "../config.js";
+
 const Card = (props) => {
-  const { image, name, rating, place } = props;
+  const { cloudinaryImageId, name, avgRating, cuisines } = props;
   //destructuring
   return (
     <div className="card-container">
-      <img src={image} />
+      <img src={imageID + cloudinaryImageId} />
       <h2>{name}</h2>
-      <p>{rating}</p>
-      <p>{place}</p>
+      <p>{avgRating}</p>
+      <p>{cuisines.join(", ")}</p>
     </div>
   );
 };

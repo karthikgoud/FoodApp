@@ -1,3 +1,5 @@
+import LogButton from "./LogButton";
+
 const Header = () => {
   return (
     <div className="header-container">
@@ -8,6 +10,11 @@ const Header = () => {
         <li>Contact</li>
         <li>Cart</li>
       </ul>
+
+      {/* conditional rendering */}
+      {/* {condition ? true : false} */}
+
+      <LogButton status={true} />
     </div>
   );
 };
