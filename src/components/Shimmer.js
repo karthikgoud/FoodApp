@@ -3,8 +3,8 @@ const Shimmer = () => {
     <div className="restaurant-list">
       {Array(14)
         .fill("")
-        .map(() => {
-          return <div className="shimmer"></div>;
+        .map((item, index) => {
+          return <div key={index} className="shimmer"></div>;
         })}
     </div>
   );

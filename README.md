@@ -1,29 +1,29 @@
-# Assignment 6
+# Assignment 7
 
-## code working steps:
+## Topics in assignment7
 
-1. render body component with shimmer component
-2. goto useEffect and call API function , runs fetch for given path, convets to json and setState to data
-3. again render component with API data.
+- Shimmer component
+- react-router-dom install
+  - createBrowserRouter, takes [{}]
+    - path,
+    - element
+    - errorElement
+    - childeren = [{}]
+  - RouterProvider, router={}
+  - Outlet
+  - Link
+  - ErrorPage , useRouteError,
+  - Dynamic routing
+  -
 
-## featured done in file
+## dynamic routing steps
 
-1. added live data from swiggy
-2. used image from cloudinary data
-3. converted search to lowercase
-4. return correct data in card component
+1. create path in appRouter "/restaurant/id"
+2. import link in Body component add path to "to" attribute in Link
+3. make it dynamic by by passing data.id
+4. now each card is showing that path like localhost:1234/restaurant/220393
+5. read above path using useParams hook
+6. call api using above id .
+7. return jsx using above data
 
-## Best place to call API
-
-- in useEffect
-- 2 ways we can call API.
-
-- 1st way : Load >> API call >> update UI with API data
-- 2nd way: Load >> render UI with initial data / shimmer data >> API call >> update UI again using API data
-
-## 2nd way is best because:
-
-- 1st it renders component using initial/default data
-- then it makes API call using useEffect once
-- in useEffect state is updated.
-- then it renders UI again with API data
+## Topics in assignment7
